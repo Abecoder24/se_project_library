@@ -267,25 +267,32 @@
 }
 
 .person_name_feynman {
-  right: 60px;
+  right: -125px;
+  top: 0px;
 }
 
 .person_name_burbidge {
   /* Use correct values of top/right/bottom/left properties to position the element */
+  right: -490px;
+  top: 250px;
 }
 
 .person_name_cannon {
   /* Use correct values of top/right/bottom/left properties to position the element */
+  bottom: 100px;
+  right: -300px;
 }
 
 .person_name_mitchell {
   /* Use correct values of top/right/bottom/left properties to position the element */
+  bottom: 150px;
+  left: 214px;
 }
 
 .person_name_tarter {
-  /* Use correct values of top/right/bottom/left properties to position the element */
+  top: 250px;
+  left: 330px;
 }
-
 .person__image {
   max-width: 100%;
   position: relative;
@@ -309,7 +316,11 @@
   font-size: 14px;
   margin: 0;
   position: absolute;
-  top: 10px;
+  top: -30px;
+}
+.person__caption1 {
+  bottom: -50px;
+  position: absolute;
 }
 
 .membership {
@@ -331,11 +342,17 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
+  display: flex;
+  flex-basis: 220px;
+  flex-direction: row;
+  column-gap: 40px;
+  justify-content: space-around;
   /* Add styles */
 }
 
 .step {
   /* Add styles */
+  flex-basis: 220px;
 }
 
 .step__title {
@@ -371,6 +388,9 @@
   font-weight: 500;
   z-index: 1;
   max-width: 154px;
+  position: relative;
+  top: 60px;
+  left: 15px;
 }
 
 .about__content {
@@ -378,10 +398,13 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  position: relative;
+  left: 240px;
+  z-index: 3;
 }
 
 .about__paragraph {
-  margin: 0;
+  margin: 32px;
 }
 
 .about__circle {
@@ -389,22 +412,43 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  z-index: 0;
+  position: relative;
+  top: -646px;
+  left: -174px;
 }
 
 .footer {
   box-sizing: border-box;
+  background-color: black;
+  color: white;
 }
 
 .footer__columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 80px;
 }
 
 .footer__column_content_hours {
+  position: relative;
+  right: -270px;
+  padding-right: 100px;
 }
 
 .footer__column_content_social {
+  position: relative;
+  right: -60px;
+  margin-right: 102px;
 }
 
 .footer__logo {
+  width: 152px;
+  height: 32px;
+  margin-top: 60px;
+  position: relative;
+  left: 80px;
 }
 
 .footer__list {
@@ -415,9 +459,15 @@
 }
 
 .footer__list-item {
+  margin: 16px;
+  color: white;
 }
 
 .footer__column-heading {
+  position: relative;
+  right: -18px;
+  margin-bottom: 20px;
+  margin-top: 60px;
 }
 
 .footer__column-link {
@@ -427,8 +477,17 @@
   text-decoration: none;
 }
 
+.footer__column-link:hover {
+  color: #c1c1c1;
+}
+
 .footer__social-icon {
+  width: 16px;
+  height: 16px;
+  color: rgb(245, 245, 245);
 }
 
 .footer__copyright {
+  position: relative;
+  right: 766px;
 }
