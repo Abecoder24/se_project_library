@@ -203,7 +203,6 @@
 
 .event-info__item {
   display: flex;
-  flex-direction: column;
   margin-bottom: 4px;
   font-weight: 500;
 }
@@ -315,8 +314,6 @@
   text-align: center;
   font-size: 14px;
   margin: 0;
-  position: absolute;
-  top: -30px;
 }
 
 .membership {
@@ -397,6 +394,9 @@
   position: relative;
   left: 240px;
   z-index: 3;
+  display: flex;
+  flex-direction: column;
+  column-gap: 32px;
 }
 
 .about__paragraph {
@@ -409,9 +409,9 @@
   height: 495px;
   border-radius: 50%;
   z-index: 0;
-  position: relative;
-  top: -646px;
-  left: -174px;
+  position: absolute;
+  top: -121px;
+  left: -91px;
 }
 
 .footer {
@@ -434,9 +434,6 @@
 }
 
 .footer__column_content_social {
-  position: relative;
-  right: -60px;
-  margin-right: 102px;
 }
 
 .footer__logo {
@@ -444,7 +441,6 @@
   height: 32px;
   margin-top: 60px;
   position: relative;
-  left: 80px;
 }
 
 .footer__list {
@@ -481,9 +477,9 @@
   width: 16px;
   height: 16px;
   color: rgb(245, 245, 245);
+  padding-right: 4px;
 }
 
 .footer__copyright {
-  position: relative;
-  right: 2488px;
+  margin-top: 203px;
 }
