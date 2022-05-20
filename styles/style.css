@@ -1,11 +1,11 @@
 /* Add your class here */
 .page {
-  max-width: 1600px;
-  margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   min-width: 1100px;
+  max-width: 1600px;
 }
 .header {
   height: 100vh;
@@ -21,12 +21,11 @@
   width: 196px;
   height: 60px;
   position: relative;
-  right: 2100px;
 }
 .nav {
   /* Add flex properties here */
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -65,7 +64,6 @@
 }
 
 .header__image {
-  /* Write styles here */
   z-index: 1;
   position: absolute;
   right: 20px;
@@ -83,7 +81,6 @@
   padding: 40px 80px 0;
   justify-content: space-between;
   box-sizing: border-box;
-  max-width: 636px;
 }
 
 .header__link {
@@ -104,7 +101,7 @@
 .staff {
   padding-top: 100px;
   padding-bottom: 140px;
-  background-color: #aaa5a5;
+  background-color: #f2f2f2;
 }
 
 .staff__title {
@@ -125,7 +122,7 @@
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 .flexbox-container {
   max-width: 760px;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -146,7 +143,9 @@
 }
 
 .card__content {
-  width: 360px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .card__title {
@@ -169,7 +168,7 @@
   color: #838383;
   /* Auto margins applied on a flex item automatically extend specified margin to occupy the extra space in the flex container */
   /* In our case, this pushes the element down to the bottom */
-  margin-top: 200px;
+  margin-top: auto;
 }
 
 .events {
@@ -204,7 +203,7 @@
 
 .event-info__item {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   margin-bottom: 4px;
   font-weight: 500;
 }
@@ -245,7 +244,7 @@
 }
 
 /* Add the hover state styles for .events__more here */
-/* .events__more:hover {
+/*.events__more:hover {
 } */
 
 .events__cover {
@@ -269,36 +268,35 @@
 }
 
 .person_name_feynman {
-  right: -125px;
+  left: 319px;
   top: 0px;
 }
 
 .person_name_burbidge {
   /* Use correct values of top/right/bottom/left properties to position the element */
-  right: -490px;
-  top: 250px;
+  right: 125px;
+  top: 96px;
 }
 
 .person_name_cannon {
   /* Use correct values of top/right/bottom/left properties to position the element */
-  bottom: 100px;
-  right: -300px;
+  bottom: 18px;
+  right: 216px;
 }
 
 .person_name_mitchell {
   /* Use correct values of top/right/bottom/left properties to position the element */
-  bottom: 150px;
-  left: 214px;
+  bottom: 82px;
+  left: 142px;
 }
 
 .person_name_tarter {
-  top: 250px;
-  left: 330px;
+  top: 79px;
+  left: 159px;
 }
 .person__image {
   max-width: 100%;
   position: relative;
-  top: 55px;
 }
 
 .person__image_size_l {
@@ -319,10 +317,6 @@
   margin: 0;
   position: absolute;
   top: -30px;
-}
-.person__caption1 {
-  bottom: -50px;
-  position: absolute;
 }
 
 .membership {
@@ -348,7 +342,7 @@
   flex-basis: 220px;
   flex-direction: row;
   column-gap: 40px;
-  justify-content: space-around;
+  justify-content: center;
   /* Add styles */
 }
 
