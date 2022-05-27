@@ -113,7 +113,7 @@
   margin: 24px 0 0;
 }
 
-.flexbox-container {
+.staff__cards {
   max-width: 760px;
   margin: 0 auto;
   display: flex;
@@ -255,7 +255,7 @@
 
 .person_name_feynman {
   left: 319px;
-  top: 0px;
+  top: -30px;
 }
 
 .person_name_burbidge {
@@ -320,7 +320,6 @@
   padding: 0;
   margin: 100px 0 0;
   display: flex;
-  flex-basis: 220px;
   flex-direction: row;
   column-gap: 40px;
   justify-content: center;
@@ -354,6 +353,8 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: flex;
+  gap: 120px;
 }
 
 .about__title {
@@ -363,9 +364,6 @@
   font-weight: 500;
   z-index: 1;
   max-width: 154px;
-  position: relative;
-  top: 60px;
-  left: 15px;
 }
 
 .about__content {
@@ -374,15 +372,16 @@
   font-weight: 400;
   max-width: 660px;
   position: relative;
-  left: 240px;
-  z-index: 3;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   column-gap: 32px;
 }
-
+.about__paragraph:first-of-type {
+  margin-top: 0;
+}
 .about__paragraph {
-  margin: 32px;
+  margin: 32px 0 0;
 }
 
 .about__circle {
@@ -398,7 +397,7 @@
 
 .footer {
   box-sizing: border-box;
-  background-color: black;
+  background-color: #1f1f1f;
   color: white;
   padding-left: 80px;
   padding-top: 60px;
@@ -465,5 +464,7 @@
 }
 
 .footer__copyright {
-  margin-top: 203px;
+  margin-top: 130px;
+  margin-bottom: auto;
+  margin-left: 80px;
 }

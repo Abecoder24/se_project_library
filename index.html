@@ -31,7 +31,7 @@
               <a href="#about" class="nav__link">About</a>
             </li>
             <li>
-              <a href="#contacts" class="nav__link">Contacts</a>
+              <a href="#footer" class="nav__link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -46,23 +46,23 @@
           alt="Illustration 'Inside the library'"
           class="header__image"
         />
-        <div>
-          <div class="header__footer">
-            <a class="header__link">About the library &darr;</a>
-            <p class="header__address">
-              200 Success Avenue, The Town of Practicum
-            </p>
-          </div>
+        <div class="header__footer">
+          <a class="header__link">About the library &darr;</a>
+          <p class="header__address">
+            200 Success Avenue, The Town of Practicum
+          </p>
         </div>
       </header>
+
       <main class="content">
         <section class="staff" id="staff">
           <h2 class="staff__title">Reader picks</h2>
           <p class="staff__subtitle">That our readers love</p>
-          <ul class="flexbox-container">
+
+          <ul class="staff__cards">
             <li class="card">
               <div class="card__content">
-                <h3 class="card__title">Introduction to Algorithms</h3>
+                <h4 class="card__title">Introduction to Algorithms</h4>
                 <p class="card__text">
                   The name of this book is self-explanatory; it's a proper
                   introduction to algorithms! Introduction to Algorithms, or
@@ -79,9 +79,9 @@
 
             <li class="card">
               <div class="card__content">
-                <h3 class="card__title">
+                <h4 class="card__title">
                   The Structure and Interpretation of Computer Programs (SICP)
-                </h3>
+                </h4>
                 <p class="card__text">
                   This is one of the best books for learning the fundamentals of
                   programming. Featured by MIT in one of their foundational
@@ -97,10 +97,10 @@
 
             <li class="card">
               <div class="card__content">
-                <h3 class="card__title">
+                <h4 class="card__title">
                   The Clean Coder: A Code of Conduct for Professional
                   Programmers
-                </h3>
+                </h4>
                 <p class="card__text">
                   Compiled by seasoned software engineer and author Robert C.
                   Martin (also known as Uncle Bob), this book covers the
@@ -114,9 +114,9 @@
 
             <li class="card">
               <div class="card__content">
-                <h3 class="card__title">
+                <h4 class="card__title">
                   Code Complete: A Practical Handbook of Software Construction
-                </h3>
+                </h4>
                 <p class="card__text">
                   Want to know how to write robust code irrespective of the
                   architecture behind your chosen programming language? Then
@@ -132,7 +132,7 @@
 
         <section class="events" id="events">
           <div class="events__content">
-            <h3 class="even ts__heading">Upcoming events:</h3>
+            <h3 class="events__heading">Upcoming events:</h3>
             <h2 class="events__title">
               In honor of Joan Feynman: Women in astrophysics
             </h2>
@@ -291,24 +291,23 @@
           <div class="about__circle"></div>
         </section>
       </main>
-      <footer class="footer" id="contacts">
+      <footer class="footer" id="footer">
         <div class="footer__columns">
           <div class="footer__column">
             <img
               src="./images/logo_white.png"
               class="footer__logo"
-              alt="Footer logo"
+              alt="Practicum logo"
             />
-            <h4 class="footer__copyright">© 2022 Abraham Snetter</h4>
           </div>
-          <div class="footer__column_content_hours">
+          <div class="footer__column footer__column_content_hours">
             <h4 class="footer__column-heading">Hours</h4>
             <ul class="footer__list">
-              <li class="footer__list-item">Weekdays:9am-8pm</li>
-              <li class="footer__list-item">Weekends:10am-6pm</li>
+              <li class="footer__list-item">Weekdays: 9am - 8pm</li>
+              <li class="footer__list-item">Weekends: 10am - 6pm</li>
             </ul>
           </div>
-          <div class="footer__column_content_social">
+          <div class="footer__column footer__column_content_social">
             <h4 class="footer__column-heading">Social media</h4>
             <ul class="footer__list">
               <li class="footer__list-item">
@@ -317,10 +316,11 @@
                     src="./images/facebook_white.svg"
                     alt="Facebook-icon"
                     class="footer__social-icon"
-                  />Facebook</a
-                >
+                  />
+                  Facebook
+                </a>
               </li>
-              <li class="footer__list-item footer__column-link">
+              <li class="footer__list-item">
                 <a href="#" class="footer__column-link">
                   <img
                     src="./images/instagram_white.svg"
@@ -332,6 +332,7 @@
             </ul>
           </div>
         </div>
+        <p class="footer__copyright">© 2022 Abraham Snetter</p>
       </footer>
     </div>
   </body>
