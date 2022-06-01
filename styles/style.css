@@ -60,7 +60,7 @@
 }
 
 .header__image {
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   right: 20px;
   top: 135px;
@@ -202,18 +202,16 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 12px;
+  height: 24px;
+  width: 24px;
 }
 
 .event-info__icon_type_calendar {
   background-image: url(../images/icon_calendar.svg);
-  height: 24px;
-  width: 24px;
 }
 
 .event-info__icon_type_pin {
   background-image: url(../images/icon_pin.svg);
-  height: 24px;
-  width: 24px;
 }
 
 .event-info__text {
@@ -232,7 +230,8 @@
   color: #2f80ed;
   text-decoration: none;
 }
-
+.event__more:hover {
+}
 .events__cover {
   flex-grow: 1;
   flex-shrink: 0;
@@ -279,7 +278,6 @@
 }
 .person__image {
   max-width: 100%;
-  position: relative;
 }
 
 .person__image_size_l {
@@ -371,7 +369,6 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
-  position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -403,13 +400,15 @@
   padding-top: 60px;
   padding-right: 102px;
   padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  min-height: 344px;
 }
 
 .footer__columns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 80px;
 }
 
 .footer__column_content_hours {
@@ -421,8 +420,8 @@
 }
 
 .footer__logo {
-  width: 116px;
-  height: 21px;
+  width: 153px;
+  height: 32px;
 }
 
 .footer__list {
@@ -449,6 +448,8 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .footer__column-link:hover {
@@ -459,11 +460,9 @@
   width: 16px;
   height: 16px;
   color: rgb(245, 245, 245);
-  margin-right: 4px;
+  margin-right: 10x;
 }
 
 .footer__copyright {
-  margin-top: auto;
   margin-bottom: 0px;
-  margin-left: 80px;
 }
