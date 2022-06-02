@@ -229,8 +229,10 @@
   margin-top: 60px;
   color: #2f80ed;
   text-decoration: none;
+  transition: opacity 0.15s;
 }
-.event__more:hover {
+.events__more:hover {
+  opacity: 50%;
 }
 .events__cover {
   flex-grow: 1;
@@ -460,7 +462,7 @@
   width: 16px;
   height: 16px;
   color: rgb(245, 245, 245);
-  margin-right: 10x;
+  margin-right: 10px;
 }
 
 .footer__copyright {
