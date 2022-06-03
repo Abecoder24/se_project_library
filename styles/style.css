@@ -232,7 +232,7 @@
   transition: opacity 0.15s;
 }
 .events__more:hover {
-  opacity: 50%;
+  color: #1f69c9;
 }
 .events__cover {
   flex-grow: 1;
@@ -372,9 +372,6 @@
   font-weight: 400;
   max-width: 660px;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  column-gap: 32px;
 }
 .about__paragraph:first-of-type {
   margin-top: 0;
@@ -466,5 +463,5 @@
 }
 
 .footer__copyright {
-  margin-bottom: 0px;
+  margin-top: auto;
 }
